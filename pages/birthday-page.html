@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/master.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapped">
+    <header>
+      <p class="header-title">Новый гороскоп на 2021 год!</p>
+      <p class="header-text">Узнайте, что Вас ждёт.</p>
+    </header>
+    <main class="container">
+      <div class="main-progress">
+        <div class="main-progress-bg w-100"></div>
+      </div>
+      <div class="main-question-first-page">
+        <p>Введите дату своего рождения:</p>
+      </div>
+      <div class="main-answear-first-page pt-41 mb-13 pb-28">
+        <div class="main-form">
+          <div class="dropdown">
+            <button class="main-dropdown">Число</button>
+            <ul class="dropdown__list" id="days">
+
+            </ul>
+            <input type="text" name="select-category" class="dropdown__input-hidden" value="0">
+          </div>
+        </div>
+
+        <div class="main-form">
+          <div class="dropdown">
+            <button class="main-dropdown">Месяц</button>
+            <ul class="dropdown__list" id="month">
+
+            </ul>
+            <input type="text" name="select-category" class="dropdown__input-hidden" value="0">
+          </div>
+        </div>
+
+        <div class="main-form">
+          <div class="dropdown">
+            <button class="main-dropdown"> Год</button>
+            <ul class="dropdown__list" id="years">
+
+            </ul>
+            <input type="text" name="select-category" class="dropdown__input-hidden" value="0">
+          </div>
+        </div>
+        <div class="main-warning">
+          <p>пожалуйста, выберите ответ</p>
+        </div>
+        <div class="main-box-img">
+          <img alt="png" id="imgSing">
+          <p class="main-img-text"></p>
+        </div>
+        <div class="main-continue mb-9 mt-25" id="mainContinue">
+          <a class="main-link" href="data-processing.html">Далее</a>
+        </div>
+      </div>
+    </main>
+    <footer class="container">
+      <p class="footer-text">2020 © HOROSCOP PERSONAL</p>
+    </footer>
+  </div>
+  <script src="../components/app.js"></script>
+  <script src="../components/birdthdayPage.js"></script>
+
+</body>
+
+</html>
