@@ -154,7 +154,7 @@ h3 {
 }
 
 .main-label {
-  padding-left: 5px;
+  padding-left: 13px;
 }
 
 .main-custom-input {
@@ -351,6 +351,7 @@ h3 {
   border: 1px solid #E4E4E4;
   text-align: left;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .main-dropdown::after {
@@ -621,4 +622,66 @@ h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #C9C9C9;
+}
+
+.main-content {
+  display: none;
+}
+
+@media (min-width: 375px) {
+  .container {
+    width: 329px;
+  }
+
+  .main-bg {
+    min-width: 100%;
+  }
+
+  .main-circle {
+    width: 184px;
+    height: 184px;
+  }
+
+  .main-label {
+    padding-right: 10px;
+  }
+
+  .main-progress {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 770px) {
+  .container {
+    width: 623px;
+  }
+
+  .main-circle {
+    width: 348px;
+    height: 348px;
+  }
+
+  .header-box {
+    width: 623px;
+    margin: 0 auto;
+  }
+
+  .main-custom-radio {
+    height: 26px;
+    width: 26px;
+  }
+
+  .main-input-text {
+    vertical-align: super;
+  }
+
+  .main-label {
+    padding-left: 58px;
+    padding-right: 50px;
+  }
+
+  .main-custom-radio::before {
+    width: 8px;
+    height: 8px;
+  }
 }
